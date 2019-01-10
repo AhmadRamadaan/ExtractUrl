@@ -14,10 +14,11 @@ public class Test {
 
         ExtractionManager manager = new ExtractionManager();
 
-        String url = "https://stackoverflow.com/questions/25244475/how-to-configure-intellij-also-android-studio-redo-shortcut-to-ctrly-instead";
+        String url = "https://edition.cnn.com/";
+        manager.downloadFile2(url);
         File downloadedFile = manager.downloadFile(url);
 
-        manager.extractLocalFile(downloadedFile, null);
+        manager.extractLocalFile(downloadedFile, "outputFile.txt");
 
 //        }catch (Exception e ){
 //            System.out.println("there is one exception occured ..");
