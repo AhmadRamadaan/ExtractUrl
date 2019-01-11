@@ -1,13 +1,9 @@
 package com.principle.extraction;
 
-import org.asynchttpclient.*;
 
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.channels.Channels;
-import java.nio.channels.FileChannel;
-import java.nio.channels.ReadableByteChannel;
 
 public class DownloaderManager {
 
@@ -57,76 +53,4 @@ public class DownloaderManager {
         }
     }
 
-    /**
-     * download file by (async-http-client) liberary
-     *
-     * @param url
-     */
-    public File downloadFilebyAsync(String url) {
-        File file = new File("async.html");
-        //create an HTTP client:
-        AsyncHttpClient client = Dsl.asyncHttpClient();
-        try {
-            //downloaded content will be placed into a FileOutputStream:
-            final FileOutputStream outputStream = new FileOutputStream(file);
-
-            /**
-             *  we create an HTTP GET request
-             *  and register an AsyncCompletionHandler handler
-             *  to process the downloaded content:
-             */
-            client.prepareGet(url).execute(new AsyncCompletionHandler<FileOutputStream>() {
-
-                @Override
-                public State onBodyPartReceived(HttpResponseBodyPart bodyPart)
-                        throws Exception {
-                    outputStream.getChannel().write(bodyPart.getBodyByteBuffer());
-                    return State.CONTINUE;
-                }
-
-                @Override
-                public FileOutputStream onCompleted(Response response)
-                        throws Exception {
-                    return outputStream;
-                }
-            });
-
-            outputStream.flush();
-            outputStream.close();
-            client.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return file;
-    }
-
-    /**
-     * download file by (java NIO )package :
-     * to transfer bytes between 2 Channels without buffering them into the application memory.
-     *
-     * @param url
-     * @return
-     */
-    public File downloadFileByNIO(String url) {
-        URL url1 = null;
-        File outputFile = null;
-        try {
-            url1 = new URL(url);
-            // read the file from our URL, we’ll create a new ReadableByteChannel from the URL stream:
-            ReadableByteChannel readableByteChannel = Channels.newChannel(url1.openStream());
-            outputFile = new File("NIOfile.html");
-
-            FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
-            FileChannel fileChannel = fileOutputStream.getChannel();
-
-            fileOutputStream.getChannel()
-                    .transferFrom(readableByteChannel, 0, Long.MAX_VALUE);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return outputFile;
-    }
 }
