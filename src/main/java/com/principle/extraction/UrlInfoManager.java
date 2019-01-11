@@ -1,16 +1,24 @@
 package com.principle.extraction;
 
+import org.jsoup.Connection;
+import org.jsoup.HttpStatusException;
+import org.jsoup.Jsoup;
+import org.jsoup.UnsupportedMimeTypeException;
+import org.jsoup.nodes.Document;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UrlInfo {
+public class UrlInfoManager {
 
     /**
      * check content of document is it a HTML content or not ?
@@ -80,6 +88,63 @@ public class UrlInfo {
             } else
                 contentType = headerValue;
         }
+    }
+
+    /**
+     * get document of URL to git title from it in the future
+     *
+     * @param url
+     * @return Document
+     */
+    public Document getDocument(String url) {
+        Document document = null;
+        try {
+            //Get Document object after parsing the html from given url.
+            System.out.println("get status =" + getStatusCode(url));
+            document = Jsoup.connect(url).get();
+
+        } catch (MalformedURLException formedUrl) {
+            System.out.println("the request URL is not a HTTP or HTTPS URL, or is otherwise malformed ");
+        } catch (HttpStatusException status) {
+            System.out.println("page not found");
+        } catch (UnsupportedMimeTypeException mime) {
+            System.out.println("the content type of Url page is not ('text/html') and the response mime type is not supported and those errors are not ignored");
+        } catch (SocketTimeoutException socket) {
+            System.out.println(" the connection times out");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return document;
+    }
+
+    /**
+     * get status code of URL page
+     *
+     * @param url
+     * @return
+     */
+
+    public int getStatusCode(String url) {
+
+        Connection.Response response = null;
+        try {
+            response = Jsoup.connect(url).execute();
+
+        } catch (MalformedURLException formedUrl) {
+            System.out.println("the request URL is not a HTTP or HTTPS URL, or is otherwise malformed ");
+        } catch (HttpStatusException status) {
+            System.out.println("page not found");
+        } catch (UnsupportedMimeTypeException mime) {
+            System.out.println("the response mime type is not supported and those errors are not ignored");
+        } catch (SocketTimeoutException socket) {
+            System.out.println(" the connection times out");
+        } catch (IOException e) {
+            System.out.println("can not read from URL 'exception from get stauts code' ");
+//            e.printStackTrace();
+        }
+
+        int statusCode = response.statusCode();
+        return statusCode;
     }
 
 }

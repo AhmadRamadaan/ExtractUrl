@@ -4,13 +4,16 @@
     <list default="true" id="9573b9fb-98cc-465a-b027-a8239d3680c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/extraction/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/ExtractionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/principle/extraction/ExtractionManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/principle/extraction/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfo$ContentType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfo$ContentType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfo$ContentType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,17 +28,113 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="682">
+              <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractorManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="280" column="52" lean-forward="true" selection-start-line="280" selection-start-column="52" selection-end-line="280" selection-end-column="52" />
+            <state relative-caret-position="220">
+              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+              <folding>
+                <element signature="docComment;method#extractLocalFile#0;class#ExtractionManager#0" />
+                <element signature="method#extractLocalFile#0;class#ExtractionManager#0" />
+                <element signature="e#596#743#0" />
+                <element signature="e#776#820#0" />
+                <element signature="e#1576#1824#0" />
+                <element signature="e#1847#1931#0" />
+                <element signature="e#1955#2046#0" />
+                <element signature="e#2071#2183#0" />
+                <element signature="e#2192#2452#0" />
+                <element signature="e#2231#2442#1" />
+                <element signature="e#2253#2313#0" />
+                <element signature="e#2336#2428#0" />
+                <element signature="docComment;method#extractLocalFile#1;class#ExtractionManager#0" />
+                <element signature="method#extractLocalFile#1;class#ExtractionManager#0" />
+                <element signature="e#3034#3242#0" />
+                <element signature="e#3275#3319#0" />
+                <element signature="e#4017#4105#0" />
+                <element signature="e#4128#4212#0" />
+                <element signature="e#4236#4327#0" />
+                <element signature="e#4352#4464#0" />
+                <element signature="e#4473#4733#0" />
+                <element signature="e#4512#4723#1" />
+                <element signature="e#4534#4594#0" />
+                <element signature="e#4617#4709#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/DownloaderManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding>
+                <element signature="docComment;method#downloadFile#0;class#DownloaderManager#0" />
+                <element signature="method#downloadFile#0;class#DownloaderManager#0" />
+                <element signature="e#684#785#1" />
+                <element signature="e#791#1869#1" />
+                <element signature="e#1084#1475#0" />
+                <element signature="e#1508#1582#0" />
+                <element signature="e#1615#1695#0" />
+                <element signature="e#1718#1834#0" />
+                <element signature="docComment;method#downloadFilebyAsync#0;class#DownloaderManager#0" />
+                <element signature="method#downloadFilebyAsync#0;class#DownloaderManager#0" />
+                <element signature="e#2166#3219#0" />
+                <element signature="class#2559:3110" />
+                <element signature="method#onBodyPartReceived#0;class#2559:3110" />
+                <element signature="method#onCompleted#0;class#2559:3110" />
+                <element signature="e#3252#3296#0" />
+                <element signature="e#3319#3363#0" />
+                <element signature="docComment;method#downloadFileByNIO#0;class#DownloaderManager#0" />
+                <element signature="method#downloadFileByNIO#0;class#DownloaderManager#0" />
+                <element signature="e#3706#4269#0" />
+                <element signature="e#4292#4336#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfoManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+              <folding>
+                <element signature="docComment;method#checkHtmlContentType#0;class#UrlInfoManager#0" />
+                <element signature="method#checkHtmlContentType#0;class#UrlInfoManager#0" />
+                <element signature="e#865#955#0" />
+                <element signature="e#978#1022#0" />
+                <element signature="e#1213#1249#1" />
+                <element signature="docComment;method#getContentTypeHeader#0;class#UrlInfoManager#0" />
+                <element signature="method#getContentTypeHeader#0;class#UrlInfoManager#0" />
+                <element signature="e#1597#1937#1" />
+                <element signature="docComment;class#ContentType#0;class#UrlInfoManager#0" />
+                <element signature="class#ContentType#0;class#UrlInfoManager#0" />
+                <element signature="method#ContentType#0;class#ContentType#0;class#UrlInfoManager#0" />
+                <element signature="e#2559#2634#1" />
+                <element signature="docComment;method#getDocument#0;class#UrlInfoManager#0" />
+                <element signature="method#getDocument#0;class#UrlInfoManager#0" />
+                <element signature="e#2919#3122#0" />
+                <element signature="e#3163#3280#0" />
+                <element signature="e#3316#3377#0" />
+                <element signature="e#3420#3593#0" />
+                <element signature="e#3632#3704#0" />
+                <element signature="e#3727#3771#0" />
+                <element signature="docComment;method#getStatusCode#0;class#UrlInfoManager#0" />
+                <element signature="method#getStatusCode#0;class#UrlInfoManager#0" />
+                <element signature="e#3997#4062#0" />
+                <element signature="e#4103#4220#0" />
+                <element signature="e#4256#4317#0" />
+                <element signature="e#4360#4479#0" />
+                <element signature="e#4518#4590#0" />
+                <element signature="e#4613#4750#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,6 +158,8 @@
       <find>getStatusCode</find>
       <find>ford</find>
       <find>Ford</find>
+      <find>System.out.println(file)</find>
+      <find>new UrlInfoManager()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,10 +171,15 @@
         <option value="$PROJECT_DIR$/src/test/java/Tester.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/TitleExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/MyException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/FileManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/Downloader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/DownloaderManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfoManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractorManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/Test.java" />
       </list>
     </option>
   </component>
@@ -160,13 +266,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547133005461" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Intellj projects/MavenArtifactId" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547181102972" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -198,8 +304,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UrlInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.principle.extraction.UrlInfo" />
+    <configuration name="UrlInfoManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.principle.extraction.UrlInfoManager" />
       <module name="ExtractURL" />
       <extension name="coverage">
         <pattern>
@@ -214,7 +320,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.UrlInfo" />
+        <item itemvalue="Application.UrlInfoManager" />
       </list>
     </recent_temporary>
   </component>
@@ -242,9 +348,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1284" height="764" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18233387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19529983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -253,12 +358,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.600624" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50078005" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3900156" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49918962" weight="0.32917318" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49918962" weight="0.17160687" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5008104" side_tool="true" weight="0.32917318" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.33073324" />
@@ -274,7 +379,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add another method to downlad file &#10;and delete some methods from class UrlInfo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add another method to downlad file &#10;and delete some methods from class UrlInfo" />
+    <MESSAGE value="more organization ..&#10;remember : &#10;that is a java consol program to extract content of body by given it URL parameter&#10;..&#10;and you can print the content(output) in console or print it in other(local)file in your machine ." />
+    <option name="LAST_COMMIT_MESSAGE" value="more organization ..&#10;remember : &#10;that is a java consol program to extract content of body by given it URL parameter&#10;..&#10;and you can print the content(output) in console or print it in other(local)file in your machine ." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -290,31 +396,133 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/MyException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1052">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/nio/channels/ReadableByteChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="282">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/DownloaderManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="176">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="docComment;method#downloadFile#0;class#DownloaderManager#0" />
+            <element signature="method#downloadFile#0;class#DownloaderManager#0" />
+            <element signature="e#684#785#1" />
+            <element signature="e#791#1869#1" />
+            <element signature="e#1084#1475#0" />
+            <element signature="e#1508#1582#0" />
+            <element signature="e#1615#1695#0" />
+            <element signature="e#1718#1834#0" />
+            <element signature="docComment;method#downloadFilebyAsync#0;class#DownloaderManager#0" />
+            <element signature="method#downloadFilebyAsync#0;class#DownloaderManager#0" />
+            <element signature="e#2166#3219#0" />
+            <element signature="class#2559:3110" />
+            <element signature="method#onBodyPartReceived#0;class#2559:3110" />
+            <element signature="method#onCompleted#0;class#2559:3110" />
+            <element signature="e#3252#3296#0" />
+            <element signature="e#3319#3363#0" />
+            <element signature="docComment;method#downloadFileByNIO#0;class#DownloaderManager#0" />
+            <element signature="method#downloadFileByNIO#0;class#DownloaderManager#0" />
+            <element signature="e#3706#4269#0" />
+            <element signature="e#4292#4336#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfoManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="280" column="52" lean-forward="true" selection-start-line="280" selection-start-column="52" selection-end-line="280" selection-end-column="52" />
+        <state relative-caret-position="286">
+          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+          <folding>
+            <element signature="docComment;method#checkHtmlContentType#0;class#UrlInfoManager#0" />
+            <element signature="method#checkHtmlContentType#0;class#UrlInfoManager#0" />
+            <element signature="e#865#955#0" />
+            <element signature="e#978#1022#0" />
+            <element signature="e#1213#1249#1" />
+            <element signature="docComment;method#getContentTypeHeader#0;class#UrlInfoManager#0" />
+            <element signature="method#getContentTypeHeader#0;class#UrlInfoManager#0" />
+            <element signature="e#1597#1937#1" />
+            <element signature="docComment;class#ContentType#0;class#UrlInfoManager#0" />
+            <element signature="class#ContentType#0;class#UrlInfoManager#0" />
+            <element signature="method#ContentType#0;class#ContentType#0;class#UrlInfoManager#0" />
+            <element signature="e#2559#2634#1" />
+            <element signature="docComment;method#getDocument#0;class#UrlInfoManager#0" />
+            <element signature="method#getDocument#0;class#UrlInfoManager#0" />
+            <element signature="e#2919#3122#0" />
+            <element signature="e#3163#3280#0" />
+            <element signature="e#3316#3377#0" />
+            <element signature="e#3420#3593#0" />
+            <element signature="e#3632#3704#0" />
+            <element signature="e#3727#3771#0" />
+            <element signature="docComment;method#getStatusCode#0;class#UrlInfoManager#0" />
+            <element signature="method#getStatusCode#0;class#UrlInfoManager#0" />
+            <element signature="e#3997#4062#0" />
+            <element signature="e#4103#4220#0" />
+            <element signature="e#4256#4317#0" />
+            <element signature="e#4360#4479#0" />
+            <element signature="e#4518#4590#0" />
+            <element signature="e#4613#4750#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="docComment;method#extractLocalFile#0;class#ExtractionManager#0" />
+            <element signature="method#extractLocalFile#0;class#ExtractionManager#0" />
+            <element signature="e#596#743#0" />
+            <element signature="e#776#820#0" />
+            <element signature="e#1576#1824#0" />
+            <element signature="e#1847#1931#0" />
+            <element signature="e#1955#2046#0" />
+            <element signature="e#2071#2183#0" />
+            <element signature="e#2192#2452#0" />
+            <element signature="e#2231#2442#1" />
+            <element signature="e#2253#2313#0" />
+            <element signature="e#2336#2428#0" />
+            <element signature="docComment;method#extractLocalFile#1;class#ExtractionManager#0" />
+            <element signature="method#extractLocalFile#1;class#ExtractionManager#0" />
+            <element signature="e#3034#3242#0" />
+            <element signature="e#3275#3319#0" />
+            <element signature="e#4017#4105#0" />
+            <element signature="e#4128#4212#0" />
+            <element signature="e#4236#4327#0" />
+            <element signature="e#4352#4464#0" />
+            <element signature="e#4473#4733#0" />
+            <element signature="e#4512#4723#1" />
+            <element signature="e#4534#4594#0" />
+            <element signature="e#4617#4709#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="682">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>
