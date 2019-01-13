@@ -10,6 +10,8 @@ import java.util.Scanner;
 public class Manager {
 
     public Manager(String url) {
+            //get connection to read url file
+            InputStream inputStream = UrlManager.getConnection(url);
 
         int exitProgram = 2;
         do {
@@ -21,7 +23,6 @@ public class Manager {
             );
 
             int chooise = input.nextInt();
-            InputStream inputStream = UrlManager.getConnection(url);
             if (chooise == 1) {
 
                 String results = FileManager.reader(inputStream);

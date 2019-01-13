@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9573b9fb-98cc-465a-b027-a8239d3680c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/principle/testing/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/principle/testing/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/DownloaderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/network/DownloaderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/extraction/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/extraction/UrlInfoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/network/UrlInfoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ExtractURL.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/DownloaderManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/DownloaderManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/ExtractionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/principle/extraction/ExtractionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/principle/extraction/FileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfoManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfoManager$ContentType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/principle/extraction/UrlInfoManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/principle/testing/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/principle/testing/Manager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +15,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/testing/Test.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="152">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <element signature="method#connectHttpUrlConnection#0;class#UrlManager#0" />
+                <element signature="method#connectHttpsUrlConnection#0;class#UrlManager#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,11 +31,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/testing/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+            <state relative-caret-position="129">
+              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/testing/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -104,10 +100,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction2/FileManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction/FileManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/extraction2/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/testing/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/network/DownloaderManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/principle/testing/Manager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java" />
       </list>
     </option>
   </component>
@@ -139,7 +135,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="8" />
     <option name="y" value="344" />
     <option name="width" value="1254" />
@@ -220,7 +216,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547368906115" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547370197322" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -313,7 +309,7 @@
     <frame x="-2" y="0" width="1284" height="764" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20178282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20178282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -454,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/network/UrlInfoManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/ExtractionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -497,42 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
-          <folding>
-            <element signature="docComment;method#getConnection#0;class#UrlManager#0" />
-            <element signature="method#getConnection#0;class#UrlManager#0" />
-            <element signature="e#924#1739#0" />
-            <element signature="e#1058#1327#1" />
-            <element signature="e#1364#1638#1" />
-            <element signature="e#1644#1728#1" />
-            <element signature="e#1772#1816#0" />
-            <element signature="e#1839#1883#0" />
-            <element signature="method#connectHttpUrlConnection#0;class#UrlManager#0" />
-            <element signature="e#2014#2388#0" />
-            <element signature="e#2132#2189#0" />
-            <element signature="e#2421#2465#0" />
-            <element signature="e#2494#2538#0" />
-            <element signature="e#2561#2605#0" />
-            <element signature="method#connectHttpsUrlConnection#0;class#UrlManager#0" />
-            <element signature="e#2710#3087#0" />
-            <element signature="e#2829#2886#0" />
-            <element signature="e#3120#3164#0" />
-            <element signature="e#3193#3237#0" />
-            <element signature="e#3260#3304#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/network/DownloaderManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/extraction/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -554,20 +507,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/network/DownloaderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/testing/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        <state relative-caret-position="129">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/network/UrlInfoManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/network/UrlManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="method#connectHttpUrlConnection#0;class#UrlManager#0" />
+            <element signature="method#connectHttpsUrlConnection#0;class#UrlManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/principle/testing/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="198">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>

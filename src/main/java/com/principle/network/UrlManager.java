@@ -24,41 +24,50 @@ public class UrlManager {
      * @return
      * @throws Exception
      */
-    public  static InputStream getConnection(String desiredUrl) {
+    public static InputStream getConnection(String desiredUrl) {
 
-        URL url = null;
-        HttpURLConnection httpURLConnection = null;
-        HttpsURLConnection httpsURLConnection = null;
-        InputStream inputStream = null;
+        //check the content Type of URL(page)
+        boolean isHTMLType = new UrlInfoManager().checkHtmlContentType(desiredUrl);
+        //if is not html return null
+        if (!isHTMLType) {
+            System.out.println("Not HTML page");
+            System.exit(0);
+            return null;
 
-        try {
-            url = new URL(desiredUrl);
+        } else {
+            URL url = null;
+            HttpURLConnection httpURLConnection = null;
+            HttpsURLConnection httpsURLConnection = null;
+            InputStream inputStream = null;
 
-            String protocol = url.getProtocol();
+            try {
+                url = new URL(desiredUrl);
 
-            if (protocol.equals("https")) {
-                // create the HttpURLConnection
-                httpURLConnection = (HttpURLConnection) url.openConnection();
-                connectHttpUrlConnection(httpURLConnection);
-                inputStream = httpURLConnection.getInputStream();
+                String protocol = url.getProtocol();
 
-            } else if (protocol.equals("httpss")) {
-                // create the HttpURLConnection
-                httpsURLConnection = (HttpsURLConnection) url.openConnection();
-                connectHttpsUrlConnection(httpsURLConnection);
-                inputStream = httpsURLConnection.getInputStream();
+                if (protocol.equals("https")) {
+                    // create the HttpURLConnection
+                    httpURLConnection = (HttpURLConnection) url.openConnection();
+                    connectHttpUrlConnection(httpURLConnection);
+                    inputStream = httpURLConnection.getInputStream();
 
-            } else {
-                inputStream = url.openConnection().getInputStream();
+                } else if (protocol.equals("httpss")) {
+                    // create the HttpURLConnection
+                    httpsURLConnection = (HttpsURLConnection) url.openConnection();
+                    connectHttpsUrlConnection(httpsURLConnection);
+                    inputStream = httpsURLConnection.getInputStream();
+
+                } else {
+                    inputStream = url.openConnection().getInputStream();
+                }
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            return inputStream;
         }
-        return inputStream;
-
     }
 
     public static void connectHttpUrlConnection(HttpURLConnection httpURLConnection) {
