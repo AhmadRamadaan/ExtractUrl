@@ -1,10 +1,7 @@
 package com.principle.network;
 
 import javax.net.ssl.HttpsURLConnection;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
@@ -63,7 +60,11 @@ public class UrlManager {
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
-            } catch (IOException e) {
+            } catch(FileNotFoundException e ){
+                System.out.println("page not found");
+                System.exit(0);
+            }
+            catch (IOException e) {
                 e.printStackTrace();
             }
             return inputStream;
