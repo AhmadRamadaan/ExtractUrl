@@ -1,11 +1,53 @@
 package com.principle.extraction;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class FileManager {
+
+    public static String reader(InputStream inputStream) {
+        BufferedReader reader = null;
+        String line = null;
+        StringBuilder stringBuilder = null;
+
+        try {
+            // read the output from the server
+            reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+            stringBuilder = new StringBuilder();
+
+            while ((line = reader.readLine()) != null) {
+                stringBuilder.append(line + "\n");
+            }
+
+            //catch cluase
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            // close the reader; this can throw an exception too, so
+            // wrap it in another try/catch block.
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+            }
+        }
+
+        return stringBuilder.toString();
+    }
+
+    public static void writer(String buffer) {
+
+        try {
+            PrintWriter out = new PrintWriter("Results.html");
+            out.println(buffer);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 
 
     /**

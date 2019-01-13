@@ -1,33 +1,26 @@
 package com.principle.extraction;
 
-import org.xml.sax.SAXException;
-
-import java.io.*;
-
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ParseContext;
 import org.apache.tika.parser.html.HtmlParser;
 import org.apache.tika.sax.BodyContentHandler;
+import org.xml.sax.SAXException;
 
-public class ExtractorManager {
+import java.io.*;
+import java.util.List;
+import java.util.ArrayList;
 
-    /**
-     * after download file by URL
-     * this method will extract body of file in console
-     *
-     * @param inputFile
-     */
-    public void extractLocalFile(File inputFile) {
+import javax.swing.text.html.parser.ParserDelegator;
+import javax.swing.text.html.HTMLEditorKit.ParserCallback;
+import javax.swing.text.html.HTML.Tag;
+import javax.swing.text.MutableAttributeSet;
 
-        FileInputStream inputstream = null;
-        try {
-            // Any Input_stream object that contains the content of the file
-            inputstream = new FileInputStream(inputFile);
+public class ExtractionManager {
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+    public static String extractByTika(InputStream inputStream) {
+
+        String results = null;
         /**
          * Creates a content handler : that writes XHTML body character events
          * to an internal string buffer. Tika passes content of the document
@@ -49,12 +42,12 @@ public class ExtractorManager {
 
         try {
             //pcontext take data from inputstream to handler and metadata
-            htmlparser.parse(inputstream, handler, metadata, pcontext);
-            //print output in console
-            System.out.println(handler.toString());
+            htmlparser.parse(inputStream, handler, metadata, pcontext);
+            results = handler.toString();
 
         } catch (IOException e) {
             System.out.println("the document stream could not be read");
+            e.printStackTrace();
         } catch (SAXException e) {
             //sax contains error of XML parser
             e.printStackTrace();
@@ -62,35 +55,24 @@ public class ExtractorManager {
             System.out.println("the document could not be parsed");
             e.printStackTrace();
         } finally {
-            if (inputstream != null) {
+            if (inputStream != null) {
                 try {
-                    inputstream.close();
+                    inputStream.close();
                 } catch (IOException e) {
                     System.out.println("can not close input stream ..");
                 }
             }
         }
-
+        return results;
     }
 
-    /**
-     * after download file by URL(input file param)
-     * this method will extract body of file in another File(output file path param)
-     * this method extract body of inputFile.html in other file
-     *
-     * @param inputFile
-     * @param outputFilePath
-     */
-    public void extractLocalFile(File inputFile, String outputFilePath) {
-        if (outputFilePath == null) outputFilePath = "outputFile.txt";
+
+    public void extractInFileByTika(InputStream inputStream, String outputFilePath) {
 
         File outputFile = new File(outputFilePath);
         OutputStream outputStream = null;
-        FileInputStream inputstream = null;
         try {
             outputStream = new FileOutputStream(outputFile);
-            // Any Input_stream object that contains the content of the file
-            inputstream = new FileInputStream(inputFile);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -108,17 +90,19 @@ public class ExtractorManager {
          */
         Metadata metadata = new Metadata();
 
-
+        //Parse context. Used to pass context information to Tika parsers.
         ParseContext pcontext = new ParseContext();
 
         //Html parser : turn the input document to HTML SAX events
         HtmlParser htmlparser = new HtmlParser();
 
         try {
-            htmlparser.parse(inputstream, handlerFile, metadata, pcontext);
+            //pcontext take data from inputstream to handler and metadata
+            htmlparser.parse(inputStream, handlerFile, metadata, pcontext);
 
         } catch (IOException e) {
             System.out.println("the document stream could not be read");
+            e.printStackTrace();
         } catch (SAXException e) {
             //sax contains error of XML parser
             e.printStackTrace();
@@ -126,14 +110,55 @@ public class ExtractorManager {
             System.out.println("the document could not be parsed");
             e.printStackTrace();
         } finally {
-            if (inputstream != null) {
+            if (inputStream != null) {
                 try {
-                    inputstream.close();
+                    inputStream.close();
                 } catch (IOException e) {
                     System.out.println("can not close input stream ..");
                 }
             }
         }
+
     }
+
+    public static String extractTextByRegx(String html) {
+
+        String removeTags = html.toString().replaceAll("\\<.*?>", "");
+
+        return removeTags;
+    }
+
+    public static List<String> extractText(Reader reader) throws IOException {
+//                 reader = new FileReader("filenameSuccess.txt");
+        final ArrayList<String> list = new ArrayList<String>();
+
+        ParserDelegator parserDelegator = new ParserDelegator();
+        ParserCallback parserCallback = new ParserCallback() {
+            public void handleText(final char[] data, final int pos) {
+                list.add(new String(data));
+            }
+
+            public void handleStartTag(Tag tag, MutableAttributeSet attribute, int pos) {
+            }
+
+            public void handleEndTag(Tag t, final int pos) {
+            }
+
+            public void handleSimpleTag(Tag t, MutableAttributeSet a, final int pos) {
+            }
+
+            public void handleComment(final char[] data, final int pos) {
+            }
+
+            public void handleError(final java.lang.String errMsg, final int pos) {
+            }
+        };
+        parserDelegator.parse(reader, parserCallback, true);
+        for (String line : list) {
+            System.out.println(line);
+        }
+        return list;
+    }
+
 
 }
